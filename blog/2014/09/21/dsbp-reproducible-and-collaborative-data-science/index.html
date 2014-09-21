@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Dive Into Jekyll/Octopress + Github Pages - STATKWON</title>
+  <title>DSBP: Reproducible and Collaborative Data Science - STATKWON</title>
   <meta name="author" content="Jaimyoung Kwon">
 
   
-  <meta name="description" content="I found Google&rsquo;s Blogger to be tiring in writing workflow.
-I looked into a few options: Blogger (working harder!) Pros: Familar google workflow &hellip;">
+  <meta name="description" content="Although not quite in its full form, Professor Culich and Stark are on to something in their effor to
+move forward &ldquo;Reproducible and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ I looked into a few options: Blogger (working harder!) Pros: Familar google work
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages">
+  <link rel="canonical" href="http://Jaimyoung.github.io/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="STATKWON" type="application/atom+xml">
@@ -70,7 +70,7 @@ I looked into a few options: Blogger (working harder!) Pros: Familar google work
   
   <header>
     
-      <h1 class="entry-title">Dive Into Jekyll/Octopress + Github Pages</h1>
+      <h1 class="entry-title">DSBP: Reproducible and Collaborative Data Science</h1>
     
     
       <p class="meta">
@@ -79,110 +79,31 @@ I looked into a few options: Blogger (working harder!) Pros: Familar google work
 
 
 
-<time class='entry-date' datetime='2014-09-21T00:50:40-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>12:50 am</span></time>
+<time class='entry-date' datetime='2014-09-21T01:32:43-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>1:32 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I found Google&rsquo;s Blogger to be tiring in writing workflow.
-I looked into a few options:</p>
+<div class="entry-content"><p>Although not quite in its full form, Professor Culich and Stark are on to something in their effor to
+move forward &ldquo;Reproducible and Collaborative Data Science&rdquo;.
+Some highlights are:</p>
 
 <ul>
-<li>Blogger (working harder!)
-
-<ul>
-<li>Pros: Familar google workflow, most of times; analytics out-of-box.</li>
-<li>Cons: Slow. Not flexible.</li>
-</ul>
-</li>
-<li>Wordpress
-
-<ul>
-<li>Pros: Popular.</li>
-<li>Cons: Slow.</li>
-</ul>
-</li>
-<li>Github (md only), or even Gist?
-
-<ul>
-<li>Pros: Markdown is already my friend.</li>
-<li>Cons: This is not blog.</li>
-</ul>
-</li>
-<li>Github Pages, via Jekyll
-
-<ul>
-<li>Pros: Markdown is already my friend; speed; geek credential.</li>
-<li>Cons: Initial investment. Too flexible / too many options.</li>
-</ul>
-</li>
-<li>Github Pages, via Jekyll/Octopress
-
-<ul>
-<li>Pros: Markdown is already my friend; speed; geek credential; setup is more automatic than Jekyll only option.</li>
-<li>Cons: Slightly overweight than Jekyll only.</li>
-</ul>
-</li>
+<li>Starting with good overview in
+<a href="http://berkeleysciencereview.com/reproducible-collaborative-data-science/">The Berkeley Science Review</a>,</li>
+<li><a href="https://github.com/stat157/fall-2013/blob/master/topic-sketch.md">&ldquo;STAT 157&rdquo; topics</a>. (definitely not a semester-long material; maybe 2 years?)</li>
 </ul>
 
 
-<p>From a few factors, I chose &ldquo;Github Pages with Jekyll/Octopress&rdquo; option,
-after trying out a bit with Jekyll (no Octopress) option.</p>
+<p>Looking forward to the more effort in answering this question:</p>
 
-<p>So far, so good.</p>
+<blockquote><p>What should stat students need to learn for &ldquo;Data Science&rdquo;?</p></blockquote>
 
-<h2>TODO:</h2>
+<p>Maybe something in light of this <a href="https://www.kaggle.com/forums/t/7034/data-scientist-cognius-profitable-startup-in-cambridge-ma/39041">slightly tounge-in-cheek job posting</a>.</p>
 
-<ol>
-<li>Turn on Discus Comment</li>
-<li>Maybe make letters smaller?</li>
-<li>Turn on Google analytics</li>
-<li>Migrating old blogger.
-
-<ol>
-<li>To-do. Will follow <a href="http://import.jekyllrb.com/docs/blogger/">http://import.jekyllrb.com/docs/blogger/</a></li>
-</ol>
-</li>
-</ol>
-
-
-<h2>Caveats</h2>
-
-<p>If using oh-my-zsh, rake gives zsh: no matches found error all the time. Add this to .zsh</p>
-
-<pre><code>alias rake='noglob rake'
-</code></pre>
-
-<p><a href="https://www.linkedin.com/in/statkwon">https://www.linkedin.com/in/statkwon</a></p>
-
-<pre><code>rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
-rake new_page[""]
-rake new_page[about]
-rake new_page[super-awesome]
-# creates /source/super-awesome/index.markdown
-</code></pre>
-
-<p>Workflow</p>
-
-<pre><code>rake generate   # Generates posts and pages into the public directory
-rake watch      # Watches source/ and sass/ for changes and regenerates
-rake preview    # Watches, and mounts a webserver at http://localhost:4000
-</code></pre>
-
-<p>Deploy/publish</p>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<h2>Links</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-</ul>
-
+<p>[1] <a href="https://www.google.com/search?q=Reproducible+and+Collaborative+Data+Science&amp;oq=Reproducible+and+Collaborative+Data+Science&amp;aqs=chrome..69i57j69i61.407j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Some more google results on &ldquo;reproducible and collaborative data science&rdquo;</a></p>
 </div>
 
 
@@ -198,7 +119,7 @@ rake deploy
 
 
 
-<time class='entry-date' datetime='2014-09-21T00:50:40-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>12:50 am</span></time>
+<time class='entry-date' datetime='2014-09-21T01:32:43-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>1:32 am</span></time>
       
 
 
@@ -206,7 +127,7 @@ rake deploy
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages/" data-via="" data-counturl="http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Jaimyoung.github.io/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science/" data-via="" data-counturl="http://Jaimyoung.github.io/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science/" >Tweet</a>
   
   
   
@@ -215,8 +136,8 @@ rake deploy
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/09/21/dstc-python/" title="Previous Post: DSTC: Python">&laquo; DSTC: Python</a>
       
-        <a class="basic-alignment right" href="/blog/2014/09/21/dstc-sublime-text-editor/" title="Next Post: DSTC: Sublime Text Editor">DSTC: Sublime Text Editor &raquo;</a>
       
     </p>
   </footer>
