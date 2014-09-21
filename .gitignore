@@ -12,3 +12,9 @@ source/stylesheets/screen.css
 vendor
 node_modules
 Gemfile.lock
+
+# Don't track imported html files (only track converted 'markdown' ones)
+*.html
+
+#
+source/_draft/
