@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>DSTC: Python - STATKWON</title>
+  <title>Category: Octopress - STATKWON</title>
   <meta name="author" content="Jaimyoung Kwon">
 
   
-  <meta name="description" content="On Mac OSX, I found it easiest to work with
-Anaconda distribution.
-This includes, among others, the entire stack of
-SciPy stack. Style guide I like &hellip;">
+  <meta name="description" content="Category: octopress">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ SciPy stack. Style guide I like &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Jaimyoung.github.io/blog/2014/09/21/dstc-python">
+  <link rel="canonical" href="http://Jaimyoung.github.io/blog/categories/octopress">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="STATKWON" type="application/atom+xml">
@@ -68,128 +65,35 @@ SciPy stack. Style guide I like &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">DSTC: Python</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-21T01:17:17-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>1:17 am</span></time>
-        
-      </p>
+    <h1 class="entry-title">Category: Octopress</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><p>On Mac OSX, I found it easiest to work with
-<a href="http://continuum.io/downloads">Anaconda distribution</a>.
-This includes, among others, the entire stack of
-<a href="http://www.scipy.org/">SciPy</a> stack.</p>
 
-<h3>Style guide</h3>
+  
+  <h2>2014</h2>
 
-<p>I like this quote:</p>
+<article>
+  
+<h1><a href="/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages/">Dive Into Jekyll/Octopress + Github Pages</a></h1>
+<time datetime="2014-09-21T00:50:40-07:00" pubdate><span class='month'>Sep</span> <span class='day'>21</span> <span class='year'>2014</span></time>
 
-<blockquote><p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
-<cite>Quoted by Damin Conway in <a href="http://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai">Perl Best Practices</a></cite></p></blockquote>
-
-<p>Like a programmer who avoids the violent psycopath,
-it benefits researchers greatly in the long run
-when they learn to stick to good coding practice.
-One of them is of course a style guie.
-I found Google&rsquo;s guide to be useful for languages we use primarily:</p>
-
-<ul>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google&rsquo;s Python style guide</a>
-
-<ul>
-<li>pylint is good but see below is good.</li>
-</ul>
-</li>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google&rsquo;s R style guide</a>
-
-<ul>
-<li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
-</ul>
-</li>
-</ul>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/jekyll/'>jekyll</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
+</footer>
 
 
-<h3>pylint</h3>
+</article>
 
-<p>It&rsquo;s a personal and team&rsquo;s choice but default pylint config could be too aggressive.
-I found this to be reasonable.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cat ~/.pylintrc
-</span><span class='line'><span class="o">[</span>MESSAGES CONTROL<span class="o">]</span>
-</span><span class='line'><span class="nv">disable</span><span class="o">=</span>W0403,R0904
-</span><span class='line'><span class="o">[</span>BASIC<span class="o">]</span>
-</span><span class='line'><span class="c"># Regular expression which should only match correct variable names</span>
-</span><span class='line'><span class="c"># variable-rgx=[a-z_][a-z0-9_]{2,30}$</span>
-</span><span class='line'>variable-rgx<span class="o">=[</span>a-z_<span class="o">][</span>a-z0-9_<span class="o">]{</span>0,30<span class="o">}</span><span class="err">$</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This setup will be globally applied to any python.</p>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Jaimyoung Kwon</span></span>
-
-      
-
-
-
-
-<time class='entry-date' datetime='2014-09-21T01:17:17-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>1:17 am</span></time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/datascience/'>datascience</a>, <a class='category' href='/blog/categories/dstc/'>dstc</a>, <a class='category' href='/blog/categories/python/'>python</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Jaimyoung.github.io/blog/2014/09/21/dstc-python/" data-via="" data-counturl="http://Jaimyoung.github.io/blog/2014/09/21/dstc-python/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/09/21/dstc-sublime-text-editor/" title="Previous Post: DSTC: Sublime Text Editor">&laquo; DSTC: Sublime Text Editor</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science/" title="Next Post: DSBP: Reproducible and Collaborative Data Science">DSBP: Reproducible and Collaborative Data Science &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>

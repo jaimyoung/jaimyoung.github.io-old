@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | STATKWON]]></title>
+  <link href="http://Jaimyoung.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://Jaimyoung.github.io/"/>
+  <updated>2014-09-21T02:31:11-07:00</updated>
+  <id>http://Jaimyoung.github.io/</id>
+  <author>
+    <name><![CDATA[Jaimyoung Kwon]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dive Into Jekyll/Octopress + Github Pages]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages/"/>
+    <updated>2014-09-21T00:50:40-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages</id>
+    <content type="html"><![CDATA[<p>I found Google&rsquo;s Blogger to be tiring in writing workflow.
+I looked into a few options:</p>
+
+<ul>
+<li>Blogger (working harder!)
+
+<ul>
+<li>Pros: Familar google workflow, most of times; analytics out-of-box.</li>
+<li>Cons: Slow. Not flexible.</li>
+</ul>
+</li>
+<li>Wordpress
+
+<ul>
+<li>Pros: Popular.</li>
+<li>Cons: Slow.</li>
+</ul>
+</li>
+<li>Github (md only), or even Gist?
+
+<ul>
+<li>Pros: Markdown is already my friend.</li>
+<li>Cons: This is not blog.</li>
+</ul>
+</li>
+<li>Github Pages, via Jekyll
+
+<ul>
+<li>Pros: Markdown is already my friend; speed; geek credential.</li>
+<li>Cons: Initial investment. Too flexible / too many options.</li>
+</ul>
+</li>
+<li>Github Pages, via Jekyll/Octopress
+
+<ul>
+<li>Pros: Markdown is already my friend; speed; geek credential; setup is more automatic than Jekyll only option.</li>
+<li>Cons: Slightly overweight than Jekyll only.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>From a few factors, I chose &ldquo;Github Pages with Jekyll/Octopress&rdquo; option,
+after trying out a bit with Jekyll (no Octopress) option.</p>
+
+<p>So far, so good.</p>
+
+<h2>TODO:</h2>
+
+<ol>
+<li>Turn on Discus Comment</li>
+<li>Maybe make letters smaller?</li>
+<li>Turn on Google analytics</li>
+<li>Migrating old blogger.
+
+<ol>
+<li>To-do. Will follow <a href="http://import.jekyllrb.com/docs/blogger/">http://import.jekyllrb.com/docs/blogger/</a></li>
+</ol>
+</li>
+</ol>
+
+
+<h2>Caveats</h2>
+
+<p>If using oh-my-zsh, rake gives zsh: no matches found error all the time. Add this to .zsh</p>
+
+<pre><code>alias rake='noglob rake'
+</code></pre>
+
+<p><a href="https://www.linkedin.com/in/statkwon">https://www.linkedin.com/in/statkwon</a></p>
+
+<pre><code>rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
+rake new_page[""]
+rake new_page[about]
+rake new_page[super-awesome]
+# creates /source/super-awesome/index.markdown
+</code></pre>
+
+<p>Workflow</p>
+
+<pre><code>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000
+</code></pre>
+
+<p>Deploy/publish</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+<li>Tag cloud + category list <a href="https://github.com/tokkonopapa/octopress-tagcloud">https://github.com/tokkonopapa/octopress-tagcloud</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
