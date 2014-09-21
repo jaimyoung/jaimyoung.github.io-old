@@ -34,10 +34,12 @@ So far, so good.
 ## TODO:
 
 1. Turn on Discus Comment
-1. Maybe make letters smaller?    
 1. Turn on Google analytics
-1. Migrating old blogger.
+1. Won't do. ~~Maybe make letters smaller?~~
+1. Done. ~~Migrating old blogger.~~
     1. To-do. Will follow [http://import.jekyllrb.com/docs/blogger/](http://import.jekyllrb.com/docs/blogger/)
+    1. Actually, followed [this gist](https://gist.github.com/baldowl/1578928). 
+    1. Still, need to choose what to keep (none?)
 
 ## Caveats
 If using oh-my-zsh, rake gives zsh: no matches found error all the time. Add this to .zsh
