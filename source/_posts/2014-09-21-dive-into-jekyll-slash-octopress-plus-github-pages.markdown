@@ -3,8 +3,7 @@ layout: post
 title: "Dive into Jekyll/Octopress + Github Pages"
 date: 2014-09-21 00:50:40 -0700
 comments: true
-categories: 
-tags: jekyll github pages
+categories: jekyll github octopress
 ---
 
 I found Google's Blogger to be tiring in writing workflow.
@@ -68,3 +67,4 @@ Deploy/publish
 ## Links
 
 * [http://octopress.org/docs/deploying/github/](http://octopress.org/docs/deploying/github/)
+* Tag cloud + category list [https://github.com/tokkonopapa/octopress-tagcloud](https://github.com/tokkonopapa/octopress-tagcloud)

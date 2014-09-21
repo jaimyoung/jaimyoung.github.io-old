@@ -3,7 +3,7 @@ layout: post
 title: "DSTC: Sublime Text Editor"
 date: 2014-09-21 01:14:36 -0700
 comments: true
-categories: 
+categories: sublime text editor dsbp
 ---
 
 To start, first download sublime text 3. 

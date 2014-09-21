@@ -3,7 +3,7 @@ layout: post
 title: "DSBP: Reproducible and Collaborative Data Science"
 date: 2014-09-21 01:32:43 -0700
 comments: true
-categories: 
+categories: dsbp reproducible collaborative
 ---
 Although not quite in its full form, Professor Culich and Stark are on to something in their effor to 
 move forward "Reproducible and Collaborative Data Science". 

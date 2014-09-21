@@ -3,7 +3,7 @@ layout: post
 title: "DSTC: Python"
 date: 2014-09-21 01:17:17 -0700
 comments: true
-categories: 
+categories: datascience python dstc
 ---
 
 On Mac OSX, I found it easiest to work with 
