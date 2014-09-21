@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Principal Components Analysis for Dimensionality Reduction in R"
+date: 2012-10-16T12:57:00-07:00
+categories:
+ - random forest
+ - machine learning
+ - pca
+---
+
+    PCA in R
+        PCA is well known tool in dimensionality reduction. Many nice articles on the subject of "principal component analysis for dimension reduction"
+        Typically combined with Fisher linear discriminant analysis in classification tasks. 
+        In R, there's prcomp and princomp implementation. See this tutorial for some theory.
+        Question: for cross-validation task where PCA will be used for pre-processing explanatory variables, should PCA be applied to the training data only or to the whole data? 
+    Random Forest in R
+        Always helps to read about the original idea.
+        Implementation is painless. Just use randomForest package in R. This guide is very nice, touching on key points.
+        Run it on the data. Don't forget to cross-validate.
+        Accuracy evaluation with ROC curve. 
+        Evaluate importance of variables. 
+    Question: Would PCA help random forest?
+        There's a choice of exactly how. Suppose X is the raw data (with many columns k) and X' be the PCA of that for top k' (<< k); do we use X? X'? [X; X']? Why?
+        Why would PCA help random forest for any of the choices above?
+        If not, why and how else can one improve random forest?
+    See also...
+        Latent semantic analysis (LSA): yet another SVD-driven data reduction technique applied to term-document data. (Was this patented??)
+        Classical classification methods: usual suspects including:
+            logistic regression (glm in R with family='binomial'); 
+            tree method (rpart in R)
+            neural net
+
+Read this first for any data mining exercise. Always an awesome refresher. I have a copy of the 1st edition and... was shocked to see that doesn't cover random forest! (2nd edition has that. Chapter 15)
+
