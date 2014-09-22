@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Toolbox | STATKWON]]></title>
+  <link href="http://Jaimyoung.github.io/blog/categories/toolbox/atom.xml" rel="self"/>
+  <link href="http://Jaimyoung.github.io/"/>
+  <updated>2014-09-21T21:47:02-07:00</updated>
+  <id>http://Jaimyoung.github.io/</id>
+  <author>
+    <name><![CDATA[Jaimyoung Kwon]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tech Books That Influenced Me]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/29/tech-books-that-influenced-me/"/>
+    <updated>2012-10-29T12:16:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/29/tech-books-that-influenced-me</id>
+    <content type="html"><![CDATA[<ol>
+<li>The Elements of Statistical Learning (2008) by Hastie, Tibshirani, Friedman</li>
+<li>Perl Best Practices (2005) by Damian Conway</li>
+<li>Thinking, Fast and Slow (2013) by Daniel Kahneman</li>
+<li>Freakonomics (2006) by Levitt and Dubner</li>
+<li>Nudge: Improving Decisions About Health, Wealth, and Happiness (2009) by Thaler and Sunstein</li>
+<li>&ldquo;The Black Swan: The Impact of the Highly Improbable Fragility&rdquo; by Nassim Nicholas Taleb (2008)</li>
+<li>Cracking the Coding Interview: 150 Programming Questions and Solutions</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving SVN]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/22/surviving-svn/"/>
+    <updated>2012-10-22T16:01:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/22/surviving-svn</id>
+    <content type="html"><![CDATA[<p>Philosophy: tree organization and life cycle</p>
+
+<p>Below is the typical directory structure. Numbers here mean the typical execution order in the lifecycle of the product. See the section in the official doc or another &ldquo; practical take&rdquo;.</p>
+
+<pre><code>project-name
+    trunk : (1) the latest and greatest. Keep working on this all the while (2)-(9) are happening.
+        branches
+            1.0 : (2) copied from trunk when the 1.0 release is planned (3) test (4) release (6) keep on maintain for bug fixes [merged to/from the trunk] (7) released when enough bug fixes are accumulated ... 
+            2.0: (10) copied from trunk whn the 2.0 release is planned .. repeat.
+        tag
+            1.0.0 (5) tagged when released
+            1.0.1 (8) tagged at the time of the bug fix release
+</code></pre>
+
+<p>Minimal commands</p>
+
+<pre><code># start developing
+svn checkout svn+ssh://username@servername/repos/project-name/trunk
+
+# daily cycle
+svn update
+svn commit -m '
+</code></pre>
+
+<p>Slightly advanced commands</p>
+
+<pre><code># weekly cycle (if working on separate branch)
+svn merge ^/trunk
+
+
+# creating branch / tag
+svn copy svn+ssh://username@servername/repos/project-name/trunk \
+    svn+ssh://username@servername/repos/project-name/branches/1.0
+
+# comparing two branches
+# (many modern editors syntax highlight *.diff files)
+
+svn diff  ^/trunk  ^/branches/1.0 &gt; trunk-vs-1.0.diff
+</code></pre>
+
+<p>Defensive commands</p>
+
+<pre><code># bailing out
+# svn revert xxx or more transparently:
+rm xxx; svn update xxx
+
+
+# rolling back to a previous revision
+svn merge -r HEAD:23340 xxx
+
+
+svn commit -m 'Rolled back to r 23340'
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving Sqlplus]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/19/surviving-sqlplus/"/>
+    <updated>2012-10-19T03:20:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/19/surviving-sqlplus</id>
+    <content type="html"><![CDATA[<p>Starting</p>
+
+<pre><code>&gt; sqlplus username/passwd@dbname
+SQL&gt; quit
+
+&gt; sqlplus username/passwd@dbname / @filename
+</code></pre>
+
+<p>Editing script / buffer</p>
+
+<pre><code>SQL&gt; define_editor='vi' 
+-- or emacs if you have one
+
+
+SQL&gt; edit
+-- edit the buffer
+
+
+SQL&gt; run
+-- run the buffer 
+
+SQL&gt; save filename
+-- saves the buffer to a file (*.SQL); appends a slash at the end (which is important)
+
+
+SQL&gt; edit filename
+-- create a file
+
+SQL&gt; get  filename
+-- get external file into the buffer
+
+
+SQL&gt; start filename
+SQL&gt; @filename
+-- batch run of the file 
+
+
+SQL&gt; spool filename
+SQL&gt; spool off
+-- start / stop spooling 
+
+SQL&gt; !os_command
+-- runs shell command
+
+
+SQL&gt; / 
+-- run the command and store it in the SQL buffer.
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[STATKWON]]></title>
   <link href="http://Jaimyoung.github.io/atom.xml" rel="self"/>
   <link href="http://Jaimyoung.github.io/"/>
-  <updated>2014-09-21T02:31:11-07:00</updated>
+  <updated>2014-09-21T21:47:02-07:00</updated>
   <id>http://Jaimyoung.github.io/</id>
   <author>
     <name><![CDATA[Jaimyoung Kwon]]></name>
@@ -14,74 +14,91 @@
 
   
   <entry>
-    <title type="html"><![CDATA[DSBP: Reproducible and Collaborative Data Science]]></title>
-    <link href="http://Jaimyoung.github.io/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science/"/>
-    <updated>2014-09-21T01:32:43-07:00</updated>
-    <id>http://Jaimyoung.github.io/blog/2014/09/21/dsbp-reproducible-and-collaborative-data-science</id>
-    <content type="html"><![CDATA[<p>Although not quite in its full form, Professor Culich and Stark are on to something in their effor to
-move forward &ldquo;Reproducible and Collaborative Data Science&rdquo;.
-Some highlights are:</p>
+    <title type="html"><![CDATA[Data Science Tool Chain (DSTC)]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/data-science-tool-chain/"/>
+    <updated>2014-09-21T20:12:04-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/data-science-tool-chain</id>
+    <content type="html"><![CDATA[<p>Data science tool chain</p>
 
-<ul>
-<li>Starting with good overview in
-<a href="http://berkeleysciencereview.com/reproducible-collaborative-data-science/">The Berkeley Science Review</a>,</li>
-<li><a href="https://github.com/stat157/fall-2013/blob/master/topic-sketch.md">&ldquo;STAT 157&rdquo; topics</a>. (definitely not a semester-long material; maybe 2 years?)</li>
-</ul>
+<ol>
+<li>Bare basic
+
+<ol>
+<li>OSX / Linux.</li>
+<li>SSH. ssh-copy-id.</li>
+<li>Bash / zsh. Dotfiles management.</li>
+<li>Git. Bitbucket / Github.</li>
+<li>Git Pages.</li>
+</ol>
+</li>
+<li>RStudio.
+
+<ol>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google&rsquo;s R style guide</a></li>
+<li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
+</ol>
+</li>
+<li>Sublime text editor</li>
+<li>Python
+
+<ol>
+<li>Easy route: <a href="http://continuum.io/downloads">Anaconda distribution</a> with entire <a href="http://www.scipy.org/">SciPy</a> stack</li>
+<li>Style guide. pylint.
+
+<ol>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google&rsquo;s Python style guide</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Machine learning / classification / regression
+
+<ol>
+<li>&ldquo;Elements of Statistical Learning&rdquo;</li>
+<li>Lasso</li>
+<li>Lasso w/ large data.</li>
+<li>Random forest.</li>
+<li>Best practices.</li>
+<li>ROC.</li>
+</ol>
+</li>
+<li>Visualize best practice.
+
+<ol>
+<li>Ggplot. Plyr.</li>
+</ol>
+</li>
+<li>Feature reduction.
+
+<ol>
+<li>Principal component</li>
+<li>SVD</li>
+</ol>
+</li>
+<li>VW or <a href="https://github.com/JohnLangford/vowpal_wabbit/wiki">Vowpal Wabbit</a></li>
+<li>SQL</li>
+<li>Hadoop MapReduce
+
+<ol>
+<li>AWS EMR</li>
+</ol>
+</li>
+<li><a href="https://www.google.com/search?q=Reproducible+and+Collaborative+Data+Science&amp;oq=Reproducible+and+Collaborative+Data+Science&amp;aqs=chrome..69i57j69i61.407j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Reproduciblile and collaborative data science</a>.
+
+<ol>
+<li><a href="http://berkeleysciencereview.com/reproducible-collaborative-data-science/">The Berkeley Science Review</a>,</li>
+<li><a href="https://github.com/stat157/fall-2013/blob/master/topic-sketch.md">&ldquo;STAT 157&rdquo; topics</a>.</li>
+</ol>
+</li>
+</ol>
 
 
-<p>Looking forward to the more effort in answering this question:</p>
-
-<blockquote><p>What should stat students need to learn for &ldquo;Data Science&rdquo;?</p></blockquote>
-
-<p>Maybe something in light of this <a href="https://www.kaggle.com/forums/t/7034/data-scientist-cognius-profitable-startup-in-cambridge-ma/39041">slightly tounge-in-cheek job posting</a>.</p>
-
-<p>[1] <a href="https://www.google.com/search?q=Reproducible+and+Collaborative+Data+Science&amp;oq=Reproducible+and+Collaborative+Data+Science&amp;aqs=chrome..69i57j69i61.407j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Some more google results on &ldquo;reproducible and collaborative data science&rdquo;</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[DSTC: Python]]></title>
-    <link href="http://Jaimyoung.github.io/blog/2014/09/21/dstc-python/"/>
-    <updated>2014-09-21T01:17:17-07:00</updated>
-    <id>http://Jaimyoung.github.io/blog/2014/09/21/dstc-python</id>
-    <content type="html"><![CDATA[<p>On Mac OSX, I found it easiest to work with
-<a href="http://continuum.io/downloads">Anaconda distribution</a>.
-This includes, among others, the entire stack of
-<a href="http://www.scipy.org/">SciPy</a> stack.</p>
-
-<h3>Style guide</h3>
-
-<p>I like this quote:</p>
+<h3>On style guide and pylint</h3>
 
 <blockquote><p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
 <cite>Quoted by Damin Conway in <a href="http://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai">Perl Best Practices</a></cite></p></blockquote>
 
-<p>Like a programmer who avoids the violent psycopath,
-it benefits researchers greatly in the long run
-when they learn to stick to good coding practice.
-One of them is of course a style guie.
-I found Google&rsquo;s guide to be useful for languages we use primarily:</p>
-
-<ul>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google&rsquo;s Python style guide</a>
-
-<ul>
-<li>pylint is good but see below is good.</li>
-</ul>
-</li>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google&rsquo;s R style guide</a>
-
-<ul>
-<li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
-</ul>
-</li>
-</ul>
-
-
-<h3>pylint</h3>
-
-<p>It&rsquo;s a personal and team&rsquo;s choice but default pylint config could be too aggressive.
-I found this to be reasonable.</p>
+<p>I found basic pylint to be a bit too aggressive.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -99,16 +116,54 @@ I found this to be reasonable.</p>
 </span><span class='line'>variable-rgx<span class="o">=[</span>a-z_<span class="o">][</span>a-z0-9_<span class="o">]{</span>0,30<span class="o">}</span><span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<p>This setup will be globally applied to any python.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[DSTC: Sublime Text Editor]]></title>
-    <link href="http://Jaimyoung.github.io/blog/2014/09/21/dstc-sublime-text-editor/"/>
+    <title type="html"><![CDATA[블로그를 옮기면서 하게되는 생각들]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/meditation-on-migration-of-blog/"/>
+    <updated>2014-09-21T03:25:25-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/meditation-on-migration-of-blog</id>
+    <content type="html"><![CDATA[<p>대부분 데이터 사이언스, 온라인 광고 등에 대한 기술적 내용이 대부분인
+블로그를 다른 시스템으로 옮기게 되면서 70-80여개 되는 오래된 포스팅을 들여다 볼 기회가 생겼다.
+그 과정에서 두어가지 생각을 하게 되었다.</p>
+
+<h3>나의 생각은 많지 않다.</h3>
+
+<p>우선 알게 된 것은 내가 적은 내용들이 그다지 많지 않다는 것이었다.
+막상 글로 적어볼 만한 것들은 적었단 것일까.
+물론 개인적으로 적는 설교 노트와 회사에서 적는 연구자료들이 있다. 가끔은 저널에 페이퍼도 쓴다.
+그러나 결국 나는 몇가지 &ldquo;비교적 적은&rdquo; 아이디어를 가지고 사는 것임을 느끼게 된다.</p>
+
+<p>나쁘지 않다. 얼마전 뵌 은사님과의 대화에서 알게 된 것은 그 분이
+책에서 말씀하신 대단한 몇 개념을 가지고 나와의 커피 만남 동안에도 사용하셨다는 것이었다.
+큰 개념 몇가지의 변주?
+세계적 대가가 그렇다면 내가 무엇이관대 대단한 갯수의 생각을 할 것인가?
+생각의 갯수보다는. 생각의 옳음과 &ldquo;크기&#8221;와 깊이가 중요한 것일 텐데.</p>
+
+<p>결국 인생은 &ldquo;몇 개의 참으로 중요한 생각들&#8221;로 사는 것일 게다.
+나에게 그것은 어떤 것일까? 참사랑? 큰 웃음? 영원한 생명? 용서하고 용서 받는것?</p>
+
+<h3>2-3년 전 중요했다고 생각했던 것 중 90% 이상은 더이상 의미가 없다.</h3>
+
+<p>2-3년밖에 되지 않은 것이었는데 90% 이상의 정보는 옮길 가치가 없었다.
+뒤집어 생각하면 지금 참으로 중요하다고 생각되는 것들도 90% 이상은 이삼년 후에는 큰 가치가 없을 것이란
+의미이기도 할 것이다.
+적용 하자면 결국 2-3년 후, 바라기는 10년 후, 20년 후에도 의미가 있는 생각과 일과 삶이어야 할 것.</p>
+
+<h3>적용</h3>
+
+<p>아마도 포스팅의 대부분은 버릴 것이다.
+앞으로 살면서 계속 해나가야 할 비우기의 과정이겠지.
+그리고 비우고 비워서, 결국 &ldquo;그것 없이는 안 될&rdquo; 그 소중한 몇 가지를 찾아야 하겠다.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sublime Text Editor]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/sublime-text-editor/"/>
     <updated>2014-09-21T01:14:36-07:00</updated>
-    <id>http://Jaimyoung.github.io/blog/2014/09/21/dstc-sublime-text-editor</id>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/sublime-text-editor</id>
     <content type="html"><![CDATA[<p>To start, first download sublime text 3.
 Then install a few useful packages:</p>
 
@@ -257,12 +312,14 @@ after trying out a bit with Jekyll (no Octopress) option.</p>
 
 <ol>
 <li>Turn on Discus Comment</li>
-<li>Maybe make letters smaller?</li>
 <li>Turn on Google analytics</li>
-<li>Migrating old blogger.
+<li>Won&rsquo;t do. <del>Maybe make letters smaller?</del></li>
+<li>Done. <del>Migrating old blogger.</del>
 
 <ol>
 <li>To-do. Will follow <a href="http://import.jekyllrb.com/docs/blogger/">http://import.jekyllrb.com/docs/blogger/</a></li>
+<li>Actually, followed <a href="https://gist.github.com/baldowl/1578928">this gist</a>.</li>
+<li>Still, need to choose what to keep (none?)</li>
 </ol>
 </li>
 </ol>
@@ -304,6 +361,372 @@ rake deploy
 <li>Tag cloud + category list <a href="https://github.com/tokkonopapa/octopress-tagcloud">https://github.com/tokkonopapa/octopress-tagcloud</a></li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vertica JDBC in Eclipse/Maven]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2013/06/10/vertica-jdbc-in-eclipsemaven/"/>
+    <updated>2013-06-10T18:24:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2013/06/10/vertica-jdbc-in-eclipsemaven</id>
+    <content type="html"><![CDATA[<h4>Problem:</h4>
+
+<p>Want to use Vertica JDBC driver in Eclipse/Maven dependency, but Maven central repository doesn’t have it.</p>
+
+<h4>Solution:</h4>
+
+<ol>
+<li>Download vertica JDBC driver jar.</li>
+<li>At the same directory of that jar, run the following similar to what’s described here. (somehow, running it in an different directory didn’t work. Just created that annoying “*.jar.lastUpdated”)</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mvn install:install-file -DgroupId<span class="o">=</span>vertica -DartifactId<span class="o">=</span>vertica-jdbc -Dversion<span class="o">=</span>4.0.19 -Dpackaging<span class="o">=</span>jar -Dfile<span class="o">=</span>~/Downloads/vertica/vertica_4.0.19_jdk_5.jar -DgeneratePom<span class="o">=</span><span class="nb">true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>In Eclipse, Navigate > Show View > Other > Maven Repository</li>
+<li>Open Local Repositories</li>
+<li>Rebuild Index</li>
+</ol>
+
+
+<p>Now it shows up in “Add…” dialog in pom.xml edit.</p>
+
+<p>Then have fun:</p>
+
+<ol>
+<li><a href="http://chimpler.wordpress.com/2013/05/10/installing-and-comparing-mysqlmariadb-mongodb-vertica-hive-and-impala-part-1/">http://chimpler.wordpress.com/2013/05/10/installing-and-comparing-mysqlmariadb-mongodb-vertica-hive-and-impala-part-1/</a></li>
+<li><a href="http://tomgendron.wordpress.com/tag/connecting-java-to-vertica/">http://tomgendron.wordpress.com/tag/connecting-java-to-vertica/</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving Date-time, POSIX, Unix Timestamp... In R, Oracle, MySQL, Perl]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2013/01/12/surviving-date-time-datatype/"/>
+    <updated>2013-01-12T16:16:00-08:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2013/01/12/surviving-date-time-datatype</id>
+    <content type="html"><![CDATA[<p>Timezone / timestamps are easy to mess up.
+It helps us in the long run
+to have a solid conceptual framework
+by reading about, among others:
+<a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">Timezone / UTC / GMT</a>,
+<a href="http://en.wikipedia.org/wiki/Unix_time">Unix epoch / timestamp</a>,
+<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>,
+and of course an <a href="http://xkcd.com/1179/">XKCD take on this</a>.</p>
+
+<p>Essentially, most tasks are juggling between a few different entities:</p>
+
+<ol>
+<li><strong>Unix timestamp</strong>: Good.</li>
+<li><strong>String with time zone</strong>: Good. e.g. &ldquo;2013-06-24T10:21:11Z&rdquo;</li>
+<li><strong>String without time zone</strong>: Bad, bad, bad
+
+<ul>
+<li><strong>String with assumed UTC time zone</strong></li>
+<li><strong>String with assumed non-UTC time zone</strong></li>
+</ul>
+</li>
+</ol>
+
+
+<h2>Parsing and formating</h2>
+
+<h3>R</h3>
+
+<p>Remember strptime is STRing to Posix Time class:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1"># when the string is in &quot;standard&quot; format:</span>
+</span><span class='line'><span class="kp">strftime</span><span class="p">(</span><span class="kp">as.POSIXlt</span><span class="p">(</span><span class="s">&#39;2009-12-25 01:23:45&#39;</span><span class="p">),</span>format<span class="o">=</span><span class="s">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c1"># when the string is in non-standard format:</span>
+</span><span class='line'><span class="kp">strftime</span><span class="p">(</span><span class="kp">as.POSIXlt</span><span class="p">(</span><span class="s">&#39;2009-12-25 01:23:45&#39;</span><span class="p">),</span>format<span class="o">=</span><span class="s">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># TBD for unix timestamp</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Date to R date</span>
+</span><span class='line'><span class="kp">as.POSIXlt</span><span class="p">(</span><span class="s">&#39;2012-01-02T18:27:44.0000000&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="o">+</span> format<span class="o">=</span><span class="s">&#39;%Y-%m-%dT%H:%M:%S.0000000&#39;</span><span class="p">,</span> tz <span class="o">=</span> <span class="s">&#39;GMT&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># R date to unix timestamp. This is simple.</span>
+</span><span class='line'><span class="kp">as.numeric</span><span class="p">(</span> R <span class="kp">date</span><span class="p">)</span>
+</span><span class='line'>e.g. <span class="kp">as.numeric</span><span class="p">(</span><span class="kp">as.POSIXlt</span><span class="p">(</span><span class="s">&#39;2012-01-02T18:27:44.0000000&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="o">+</span> format<span class="o">=</span><span class="s">&#39;%Y-%m-%dT%H:%M:%S.0000000&#39;</span><span class="p">,</span> tz <span class="o">=</span> <span class="s">&#39;GMT&#39;</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>SQL</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="c1">-- Oracle variant</span>
+</span><span class='line'><span class="k">select</span> <span class="n">to_char</span><span class="p">(</span> <span class="n">to_date</span><span class="p">(</span><span class="s1">&#39;yyyy-mm-dd hh24:mi:ss&#39;</span><span class="p">,</span> <span class="s1">&#39;2009-12-25 01:23:45&#39;</span><span class="p">),</span> <span class="s1">&#39;mm/dd/yyyy hh24:mi:ss&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="k">from</span> <span class="n">dual</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">-- MySQL variant</span>
+</span><span class='line'><span class="k">SELECT</span> <span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">xxx</span><span class="p">,</span><span class="s1">&#39;%Y-%m&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1">-- PostgreSQL variant</span>
+</span><span class='line'><span class="c1">-- TBD</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Perl</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="k">use</span> <span class="n">POSIX</span><span class="p">;</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$date</span> <span class="o">=</span> <span class="nn">POSIX::</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-%d&#39;</span><span class="p">,</span> <span class="c1"># &#39;%Y-%m-%d %H:00:00&#39;,</span>
+</span><span class='line'>          <span class="nb">gmtime</span><span class="p">(</span><span class="nv">$timestamp</span><span class="p">));</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Java</h3>
+
+<p>Save yourself trouble. Use <a href="http://www.joda.org/joda-time/">Joda Time</a></p>
+
+<h2>Iterate over days and months</h2>
+
+<p>Another imortant</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># TBA</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c"># TBA</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1"># TBA</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>`</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tech Books That Influenced Me]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/29/tech-books-that-influenced-me/"/>
+    <updated>2012-10-29T12:16:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/29/tech-books-that-influenced-me</id>
+    <content type="html"><![CDATA[<ol>
+<li>The Elements of Statistical Learning (2008) by Hastie, Tibshirani, Friedman</li>
+<li>Perl Best Practices (2005) by Damian Conway</li>
+<li>Thinking, Fast and Slow (2013) by Daniel Kahneman</li>
+<li>Freakonomics (2006) by Levitt and Dubner</li>
+<li>Nudge: Improving Decisions About Health, Wealth, and Happiness (2009) by Thaler and Sunstein</li>
+<li>&ldquo;The Black Swan: The Impact of the Highly Improbable Fragility&rdquo; by Nassim Nicholas Taleb (2008)</li>
+<li>Cracking the Coding Interview: 150 Programming Questions and Solutions</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving SVN]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/22/surviving-svn/"/>
+    <updated>2012-10-22T16:01:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/22/surviving-svn</id>
+    <content type="html"><![CDATA[<p>Philosophy: tree organization and life cycle</p>
+
+<p>Below is the typical directory structure. Numbers here mean the typical execution order in the lifecycle of the product. See the section in the official doc or another &ldquo; practical take&rdquo;.</p>
+
+<pre><code>project-name
+    trunk : (1) the latest and greatest. Keep working on this all the while (2)-(9) are happening.
+        branches
+            1.0 : (2) copied from trunk when the 1.0 release is planned (3) test (4) release (6) keep on maintain for bug fixes [merged to/from the trunk] (7) released when enough bug fixes are accumulated ... 
+            2.0: (10) copied from trunk whn the 2.0 release is planned .. repeat.
+        tag
+            1.0.0 (5) tagged when released
+            1.0.1 (8) tagged at the time of the bug fix release
+</code></pre>
+
+<p>Minimal commands</p>
+
+<pre><code># start developing
+svn checkout svn+ssh://username@servername/repos/project-name/trunk
+
+# daily cycle
+svn update
+svn commit -m '
+</code></pre>
+
+<p>Slightly advanced commands</p>
+
+<pre><code># weekly cycle (if working on separate branch)
+svn merge ^/trunk
+
+
+# creating branch / tag
+svn copy svn+ssh://username@servername/repos/project-name/trunk \
+    svn+ssh://username@servername/repos/project-name/branches/1.0
+
+# comparing two branches
+# (many modern editors syntax highlight *.diff files)
+
+svn diff  ^/trunk  ^/branches/1.0 &gt; trunk-vs-1.0.diff
+</code></pre>
+
+<p>Defensive commands</p>
+
+<pre><code># bailing out
+# svn revert xxx or more transparently:
+rm xxx; svn update xxx
+
+
+# rolling back to a previous revision
+svn merge -r HEAD:23340 xxx
+
+
+svn commit -m 'Rolled back to r 23340'
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving Sqlplus]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/19/surviving-sqlplus/"/>
+    <updated>2012-10-19T03:20:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/19/surviving-sqlplus</id>
+    <content type="html"><![CDATA[<p>Starting</p>
+
+<pre><code>&gt; sqlplus username/passwd@dbname
+SQL&gt; quit
+
+&gt; sqlplus username/passwd@dbname / @filename
+</code></pre>
+
+<p>Editing script / buffer</p>
+
+<pre><code>SQL&gt; define_editor='vi' 
+-- or emacs if you have one
+
+
+SQL&gt; edit
+-- edit the buffer
+
+
+SQL&gt; run
+-- run the buffer 
+
+SQL&gt; save filename
+-- saves the buffer to a file (*.SQL); appends a slash at the end (which is important)
+
+
+SQL&gt; edit filename
+-- create a file
+
+SQL&gt; get  filename
+-- get external file into the buffer
+
+
+SQL&gt; start filename
+SQL&gt; @filename
+-- batch run of the file 
+
+
+SQL&gt; spool filename
+SQL&gt; spool off
+-- start / stop spooling 
+
+SQL&gt; !os_command
+-- runs shell command
+
+
+SQL&gt; / 
+-- run the command and store it in the SQL buffer.
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Principal Components Analysis for Dimensionality Reduction in R]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/16/principal-components-analysis-for/"/>
+    <updated>2012-10-16T12:57:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/16/principal-components-analysis-for</id>
+    <content type="html"><![CDATA[<pre><code>PCA in R
+    PCA is well known tool in dimensionality reduction. Many nice articles on the subject of "principal component analysis for dimension reduction"
+    Typically combined with Fisher linear discriminant analysis in classification tasks. 
+    In R, there's prcomp and princomp implementation. See this tutorial for some theory.
+    Question: for cross-validation task where PCA will be used for pre-processing explanatory variables, should PCA be applied to the training data only or to the whole data? 
+Random Forest in R
+    Always helps to read about the original idea.
+    Implementation is painless. Just use randomForest package in R. This guide is very nice, touching on key points.
+    Run it on the data. Don't forget to cross-validate.
+    Accuracy evaluation with ROC curve. 
+    Evaluate importance of variables. 
+Question: Would PCA help random forest?
+    There's a choice of exactly how. Suppose X is the raw data (with many columns k) and X' be the PCA of that for top k' (&lt;&lt; k); do we use X? X'? [X; X']? Why?
+    Why would PCA help random forest for any of the choices above?
+    If not, why and how else can one improve random forest?
+See also...
+    Latent semantic analysis (LSA): yet another SVD-driven data reduction technique applied to term-document data. (Was this patented??)
+    Classical classification methods: usual suspects including:
+        logistic regression (glm in R with family='binomial'); 
+        tree method (rpart in R)
+        neural net
+</code></pre>
+
+<p>Read this first for any data mining exercise. Always an awesome refresher. I have a copy of the 1st edition and&hellip; was shocked to see that doesn&rsquo;t cover random forest! (2nd edition has that. Chapter 15)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[영어 콤플렉스]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2012/10/12/english-complex-korean/"/>
+    <updated>2012-10-12T16:32:00-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2012/10/12/english-complex-korean</id>
+    <content type="html"><![CDATA[<p>영어가 공용어인 국제학회에서 자주 느끼게 되는 것은 동양사람들이 겪는 영어의 어려움이다. 외국인들 중에서도 유럽사람들은 보통 편안하게 영어를 하는 편인데 한-중-일 삼개국은 영어에서 큰 어려움을 겪는 경우가 많다.</p>
+
+<p>일본 사람들은 히라가나의 한계상 모음의 수가 적으므로 어려움이 더 크다. &ldquo;마구도나루도&rdquo;,  &ldquo;도라이바&rdquo;, &ldquo;가류&rdquo; :) 등으로 대표되는 음소의 한계가 문제다. 한국은 그 정도는 아니지만 경험상 다음 발음들 때문에 어려움을 겪는다:</p>
+
+<ol>
+<li>f / p 구분. 사실 비교적 해결이 쉬운 문제이다.</li>
+<li>r / l 구분. 역설적인 것은 혀를 굴리는  r 발음보다 엘 (l) 발음이 문제라는 것. 나도 wool socks를 몇번 달라고 반복해도 실패한 아픈 경험이 있다. Gilroy란 도시를 map app에서 아무리 voice recognition을 시켜 봐도 안되는것이 현실이다.</li>
+<li>a / e 구분. 이것은 사실 잘 들리지도 않는다.</li>
+<li>장-단 모음. 그러므로 beach와 sheet를 발음할 때는 extra로 신경이 쓰인다는 것.</li>
+</ol>
+
+
+<p>또한 흥미 있는 것은 스스로의 부족한 영어실력에 대한 반응이다. 유럽인들 중에서도 상당히 망가진 영어를 구사하는 발표자들이 있는데 그들의 태도는 &ldquo;그럼 어때&#8221;에 가까운 경우가 많다. 자기 말이 아니니 못하는게 당연하다는&hellip;  이에 반해 동양삼개국, 특히 한국과 일본 분들의 경우는 좀더 영어의 어려움을 아프게, 개인적(personal)으로 받아들이는 경향이 있다. 물론 체면을 중시하고 무언가를 잘 못하는 것을 개인적 실패로 받아들이는 문화의 교육 탓이겠지.</p>
+
+<p>어느 것이 옳은 태도인가? 자학하는 것보다는 할만큼 하고 안되면 그만인 태도가 도움이 된다. 실제로 영어하는 사람들은 non native speaker가 영어못하는 것 충분히 이해하고 가려 듣는다. 역설적으로, 그런 편안한 마음을 가질때 발표도 잘된다는 것. 영어는 자신감이다.</p>
 ]]></content>
   </entry>
   

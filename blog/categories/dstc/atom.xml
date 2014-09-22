@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Dstc | STATKWON]]></title>
   <link href="http://Jaimyoung.github.io/blog/categories/dstc/atom.xml" rel="self"/>
   <link href="http://Jaimyoung.github.io/"/>
-  <updated>2014-09-21T02:31:11-07:00</updated>
+  <updated>2014-09-21T21:47:02-07:00</updated>
   <id>http://Jaimyoung.github.io/</id>
   <author>
     <name><![CDATA[Jaimyoung Kwon]]></name>
@@ -14,48 +14,91 @@
 
   
   <entry>
-    <title type="html"><![CDATA[DSTC: Python]]></title>
-    <link href="http://Jaimyoung.github.io/blog/2014/09/21/dstc-python/"/>
-    <updated>2014-09-21T01:17:17-07:00</updated>
-    <id>http://Jaimyoung.github.io/blog/2014/09/21/dstc-python</id>
-    <content type="html"><![CDATA[<p>On Mac OSX, I found it easiest to work with
-<a href="http://continuum.io/downloads">Anaconda distribution</a>.
-This includes, among others, the entire stack of
-<a href="http://www.scipy.org/">SciPy</a> stack.</p>
+    <title type="html"><![CDATA[Data Science Tool Chain (DSTC)]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/data-science-tool-chain/"/>
+    <updated>2014-09-21T20:12:04-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/data-science-tool-chain</id>
+    <content type="html"><![CDATA[<p>Data science tool chain</p>
 
-<h3>Style guide</h3>
+<ol>
+<li>Bare basic
 
-<p>I like this quote:</p>
+<ol>
+<li>OSX / Linux.</li>
+<li>SSH. ssh-copy-id.</li>
+<li>Bash / zsh. Dotfiles management.</li>
+<li>Git. Bitbucket / Github.</li>
+<li>Git Pages.</li>
+</ol>
+</li>
+<li>RStudio.
+
+<ol>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google&rsquo;s R style guide</a></li>
+<li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
+</ol>
+</li>
+<li>Sublime text editor</li>
+<li>Python
+
+<ol>
+<li>Easy route: <a href="http://continuum.io/downloads">Anaconda distribution</a> with entire <a href="http://www.scipy.org/">SciPy</a> stack</li>
+<li>Style guide. pylint.
+
+<ol>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google&rsquo;s Python style guide</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Machine learning / classification / regression
+
+<ol>
+<li>&ldquo;Elements of Statistical Learning&rdquo;</li>
+<li>Lasso</li>
+<li>Lasso w/ large data.</li>
+<li>Random forest.</li>
+<li>Best practices.</li>
+<li>ROC.</li>
+</ol>
+</li>
+<li>Visualize best practice.
+
+<ol>
+<li>Ggplot. Plyr.</li>
+</ol>
+</li>
+<li>Feature reduction.
+
+<ol>
+<li>Principal component</li>
+<li>SVD</li>
+</ol>
+</li>
+<li>VW or <a href="https://github.com/JohnLangford/vowpal_wabbit/wiki">Vowpal Wabbit</a></li>
+<li>SQL</li>
+<li>Hadoop MapReduce
+
+<ol>
+<li>AWS EMR</li>
+</ol>
+</li>
+<li><a href="https://www.google.com/search?q=Reproducible+and+Collaborative+Data+Science&amp;oq=Reproducible+and+Collaborative+Data+Science&amp;aqs=chrome..69i57j69i61.407j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Reproduciblile and collaborative data science</a>.
+
+<ol>
+<li><a href="http://berkeleysciencereview.com/reproducible-collaborative-data-science/">The Berkeley Science Review</a>,</li>
+<li><a href="https://github.com/stat157/fall-2013/blob/master/topic-sketch.md">&ldquo;STAT 157&rdquo; topics</a>.</li>
+</ol>
+</li>
+</ol>
+
+
+<h3>On style guide and pylint</h3>
 
 <blockquote><p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
 <cite>Quoted by Damin Conway in <a href="http://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai">Perl Best Practices</a></cite></p></blockquote>
 
-<p>Like a programmer who avoids the violent psycopath,
-it benefits researchers greatly in the long run
-when they learn to stick to good coding practice.
-One of them is of course a style guie.
-I found Google&rsquo;s guide to be useful for languages we use primarily:</p>
-
-<ul>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google&rsquo;s Python style guide</a>
-
-<ul>
-<li>pylint is good but see below is good.</li>
-</ul>
-</li>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google&rsquo;s R style guide</a>
-
-<ul>
-<li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
-</ul>
-</li>
-</ul>
-
-
-<h3>pylint</h3>
-
-<p>It&rsquo;s a personal and team&rsquo;s choice but default pylint config could be too aggressive.
-I found this to be reasonable.</p>
+<p>I found basic pylint to be a bit too aggressive.</p>
 
 <pre><code class="bash">    $ cat ~/.pylintrc 
     [MESSAGES CONTROL]
@@ -65,8 +108,84 @@ I found this to be reasonable.</p>
     # variable-rgx=[a-z_][a-z0-9_]{2,30}$
     variable-rgx=[a-z_][a-z0-9_]{0,30}$
 </code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sublime Text Editor]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2014/09/21/sublime-text-editor/"/>
+    <updated>2014-09-21T01:14:36-07:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2014/09/21/sublime-text-editor</id>
+    <content type="html"><![CDATA[<p>To start, first download sublime text 3.
+Then install a few useful packages:</p>
 
-<p>This setup will be globally applied to any python.</p>
+<ol>
+<li>Install package control</li>
+<li>Install bunch of packages:
+
+<ol>
+<li>sublimelinter</li>
+<li>sublimelinter-pylint (see below)</li>
+<li>markdown-extended</li>
+<li>monokai-extended (and enable it)</li>
+<li>git gutter</li>
+</ol>
+</li>
+</ol>
+
+
+<p>Default settings work well, but one might want to change the &ldquo;user&rdquo; setting
+for handling tabs:</p>
+
+<pre><code>"translate_tabs_to_spaces": true
+"tab_size": 4,
+"detect_indentation": true,
+</code></pre>
+
+<p>Syntax specific changes in tab_size is also useful. For *.R for example:</p>
+
+<pre><code>"tab_size": 4,
+</code></pre>
+
+<h3>Sublimelinter + pylint + anaconda python on Mac OSX conundrum</h3>
+
+<p>Mac OSX Path for python in sublime is messed up by default.
+Default pylint install leads to:</p>
+
+<pre><code>SublimeLinter: WARNING: no pylint version could be extracted from:
+Traceback (most recent call last):
+  File "/usr/local/bin/pylint", line 5, in &lt;module&gt;
+    from pkg_resources import load_entry_point
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 2603, in &lt;module&gt;
+    working_set.require(__requires__)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 666, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 565, in resolve
+    raise DistributionNotFound(req)  # XXX put more info here
+pkg_resources.DistributionNotFound: pylint==1.3.1
+</code></pre>
+
+<p>Add the following to sublimelinter-user:</p>
+
+<pre><code class="js">{
+    "user": {
+    ...
+        "paths": {
+            "linux": [],
+            "osx": [
+                "/Users/jaimiekwon/anaconda/bin/"
+            ],
+            "windows": []
+        },
+        "python_paths": {
+            "linux": [],
+            "osx": [
+                "/Users/jaimiekwon/anaconda/bin/"
+            ],
+            "windows": []
+        },
+}
+</code></pre>
 ]]></content>
   </entry>
   
