@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | STATKWON]]></title>
   <link href="http://Jaimyoung.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://Jaimyoung.github.io/"/>
-  <updated>2014-09-21T21:49:03-07:00</updated>
+  <updated>2014-09-21T23:10:10-07:00</updated>
   <id>http://Jaimyoung.github.io/</id>
   <author>
     <name><![CDATA[Jaimyoung Kwon]]></name>
@@ -82,33 +82,29 @@ after trying out a bit with Jekyll (no Octopress) option.</p>
 </ol>
 
 
-<h2>Caveats</h2>
+<h2>Octopress workflow</h2>
 
-<p>If using oh-my-zsh, rake gives zsh: no matches found error all the time. Add this to .zsh</p>
+<p>If using <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>,
+<code>rake</code> gives
+<code>zsh: no matches found error</code>
+all the time. Add this to <code>.zsh</code>:</p>
 
 <pre><code>alias rake='noglob rake'
 </code></pre>
 
-<p><a href="https://www.linkedin.com/in/statkwon">https://www.linkedin.com/in/statkwon</a></p>
+<p>Then, the workflow looks like:</p>
 
-<pre><code>rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
-rake new_page[""]
-rake new_page[about]
-rake new_page[super-awesome]
-# creates /source/super-awesome/index.markdown
-</code></pre>
+<pre><code class="bash">    rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
+    rake new_page[about]
+    # creates /source/about/index.markdown
 
-<p>Workflow</p>
+    rake generate   # Generates posts and pages into the public directory
+    rake watch      # Watches source/ and sass/ for changes and regenerates
+    rake preview    # Watches, and mounts a webserver at http://localhost:4000
 
-<pre><code>rake generate   # Generates posts and pages into the public directory
-rake watch      # Watches source/ and sass/ for changes and regenerates
-rake preview    # Watches, and mounts a webserver at http://localhost:4000
-</code></pre>
-
-<p>Deploy/publish</p>
-
-<pre><code>rake generate
-rake deploy
+    # Deploy/publish
+    rake generate
+    rake deploy
 </code></pre>
 
 <h2>Links</h2>
