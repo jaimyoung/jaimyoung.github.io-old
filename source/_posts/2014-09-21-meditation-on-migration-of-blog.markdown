@@ -3,7 +3,7 @@ layout: post
 title: "블로그를 옮기면서 하게되는 생각들"
 date: 2014-09-21 03:25:25 -0700
 comments: true
-categories: life blog migration
+categories: life blog migration korean
 ---
 대부분 데이터 사이언스, 온라인 광고 등에 대한 기술적 내용이 대부분인
 블로그를 다른 시스템으로 옮기게 되면서 70-80여개 되는 오래된 포스팅을 들여다 볼 기회가 생겼다.
