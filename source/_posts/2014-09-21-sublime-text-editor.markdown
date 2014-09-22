@@ -20,18 +20,19 @@ Then install a few useful packages:
 Default settings work well, but one might want to change the "user" setting 
 for handling tabs:
 
+``` js
     "translate_tabs_to_spaces": true
     "tab_size": 4,
     "detect_indentation": true,
-
+```
 Syntax specific changes in tab_size is also useful. For *.R for example:
-
-    "tab_size": 4,
+`"tab_size": 2,`
 
 ### Sublimelinter + pylint + anaconda python on Mac OSX conundrum
 Mac OSX Path for python in sublime is messed up by default. 
 Default pylint install leads to:
 
+``` bash
     SublimeLinter: WARNING: no pylint version could be extracted from:
     Traceback (most recent call last):
       File "/usr/local/bin/pylint", line 5, in <module>
@@ -43,8 +44,8 @@ Default pylint install leads to:
       File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 565, in resolve
         raise DistributionNotFound(req)  # XXX put more info here
     pkg_resources.DistributionNotFound: pylint==1.3.1
-
-Add the following to sublimelinter-user:
+```
+Add the following to sublimelinter-user to fix it:
 
 ``` js
 {

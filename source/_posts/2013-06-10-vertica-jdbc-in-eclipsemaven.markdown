@@ -11,10 +11,7 @@ Want to use Vertica JDBC driver in Eclipse/Maven dependency, but Maven central r
 1. Download vertica JDBC driver jar.
 1. At the same directory of that jar, run the following similar to what’s described here. (somehow, running it in an different directory didn’t work. Just created that annoying “*.jar.lastUpdated”)
 
-``` bash
-$ mvn install:install-file -DgroupId=vertica -DartifactId=vertica-jdbc -Dversion=4.0.19 -Dpackaging=jar -Dfile=~/Downloads/vertica/vertica_4.0.19_jdk_5.jar -DgeneratePom=true
-```
-
+        $ mvn install:install-file -DgroupId=vertica -DartifactId=vertica-jdbc -Dversion=4.0.19 -Dpackaging=jar -Dfile=~/Downloads/vertica/vertica_4.0.19_jdk_5.jar -DgeneratePom=true
 1. In Eclipse, Navigate > Show View > Other > Maven Repository
 1. Open Local Repositories
 1. Rebuild Index

@@ -41,31 +41,29 @@ So far, so good.
     1. Actually, followed [this gist](https://gist.github.com/baldowl/1578928). 
     1. Still, need to choose what to keep (none?)
 
-## Caveats
-If using oh-my-zsh, rake gives zsh: no matches found error all the time. Add this to .zsh
+## Octopress workflow
+If using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), 
+`rake` gives 
+`zsh: no matches found error` 
+all the time. Add this to `.zsh`:
 
     alias rake='noglob rake'
 
-https://www.linkedin.com/in/statkwon
+Then, the workflow looks like:
 
-
+``` bash
     rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
-    rake new_page[""]
     rake new_page[about]
-    rake new_page[super-awesome]
-    # creates /source/super-awesome/index.markdown
-
-Workflow
+    # creates /source/about/index.markdown
 
     rake generate   # Generates posts and pages into the public directory
     rake watch      # Watches source/ and sass/ for changes and regenerates
     rake preview    # Watches, and mounts a webserver at http://localhost:4000
 
-Deploy/publish
-
+    # Deploy/publish
     rake generate
     rake deploy
-
+```
 ## Links
 
 * [http://octopress.org/docs/deploying/github/](http://octopress.org/docs/deploying/github/)
