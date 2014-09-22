@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | STATKWON]]></title>
   <link href="http://Jaimyoung.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://Jaimyoung.github.io/"/>
-  <updated>2014-09-22T00:26:07-07:00</updated>
+  <updated>2014-09-22T11:47:07-07:00</updated>
   <id>http://Jaimyoung.github.io/</id>
   <author>
     <name><![CDATA[Jaimyoung Kwon]]></name>
@@ -65,12 +65,11 @@ after trying out a bit with Jekyll (no Octopress) option.</p>
 
 <p>So far, so good.</p>
 
-<h2>TODO:</h2>
+<p>A few to-do items were:</p>
 
 <ol>
-<li>Turn on Discus Comment</li>
-<li>Turn on Google analytics</li>
-<li>Won&rsquo;t do. <del>Maybe make letters smaller?</del></li>
+<li>Done. ~Turn on Discus Comment~</li>
+<li>Done. ~Turn on Google analytics~</li>
 <li>Done. <del>Migrating old blogger.</del>
 
 <ol>
@@ -79,6 +78,7 @@ after trying out a bit with Jekyll (no Octopress) option.</p>
 <li>Still, need to choose what to keep (none?)</li>
 </ol>
 </li>
+<li>Done. <a href="https://github.com/tokkonopapa/octopress-tagcloud">Tag cloud + category list</a></li>
 </ol>
 
 
@@ -92,7 +92,7 @@ all the time. Add this to <code>.zsh</code>:</p>
 <pre><code>alias rake='noglob rake'
 </code></pre>
 
-<p>Then, the workflow looks like:</p>
+<p>Then, the <a href="http://octopress.org/docs/deploying/github/">workflow</a> looks like:</p>
 
 <pre><code class="bash">    rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
     rake new_page[about]
@@ -106,14 +106,6 @@ all the time. Add this to <code>.zsh</code>:</p>
     rake generate
     rake deploy
 </code></pre>
-
-<h2>Links</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-<li>Tag cloud + category list <a href="https://github.com/tokkonopapa/octopress-tagcloud">https://github.com/tokkonopapa/octopress-tagcloud</a></li>
-</ul>
-
 ]]></content>
   </entry>
   

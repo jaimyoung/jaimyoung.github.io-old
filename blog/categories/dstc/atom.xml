@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Dstc | STATKWON]]></title>
   <link href="http://Jaimyoung.github.io/blog/categories/dstc/atom.xml" rel="self"/>
   <link href="http://Jaimyoung.github.io/"/>
-  <updated>2014-09-22T00:26:07-07:00</updated>
+  <updated>2014-09-22T11:47:07-07:00</updated>
   <id>http://Jaimyoung.github.io/</id>
   <author>
     <name><![CDATA[Jaimyoung Kwon]]></name>
@@ -38,7 +38,12 @@
 <li><a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham R style guide</a></li>
 </ol>
 </li>
-<li>Sublime text editor</li>
+<li>Sublime text editor
+
+<ol>
+<li>Read <a href="https://developers.google.com/web/fundamentals/tools/setup/editor">This</a> and <a href="http://robdodson.me/blog/2012/06/23/sublime-text-2-tips-and-shortcuts/">that</a></li>
+</ol>
+</li>
 <li>Python
 
 <ol>
@@ -65,7 +70,8 @@
 <li>Visualize best practice.
 
 <ol>
-<li>Ggplot. Plyr.</li>
+<li><a href="ggplot2.org">ggplot2</a>. <a href="http://courses.had.co.nz/11-rice/">plyr</a></li>
+<li><a href="http://d3js.org/">d3.js</a>. Not for the faint for heart.</li>
 </ol>
 </li>
 <li>Feature reduction.
@@ -88,6 +94,15 @@
 <ol>
 <li><a href="http://berkeleysciencereview.com/reproducible-collaborative-data-science/">The Berkeley Science Review</a>,</li>
 <li><a href="https://github.com/stat157/fall-2013/blob/master/topic-sketch.md">&ldquo;STAT 157&rdquo; topics</a>.</li>
+</ol>
+</li>
+<li>&ldquo;Some&rdquo; web programming if you&rsquo;re geeky:
+
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals</a>, for multi device development</li>
+<li><a href="https://angularjs.org/">AngularJS</a>, a JavaScript MVW Framework</li>
+<li><a href="http://flask.pocoo.org/">Flask</a>, a microframework for Python</li>
+<li><a href="http://ionicframework.com/">Ionic</a>, a front-end framework for developing hybrid mobile apps with HTML5.</li>
 </ol>
 </li>
 </ol>
