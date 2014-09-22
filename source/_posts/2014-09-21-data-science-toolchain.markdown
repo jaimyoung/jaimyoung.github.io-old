@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Data Science Tool Chain (DSTC)"
+title: "Data Science Toolchain (DSTC)"
 date: 2014-09-21 20:12:04 -0700
 comments: true
 categories: dstc
 ---
 
-Data science tool chain
+Data science toolchain
 
 1. Bare basic
     1. OSX / Linux. 
