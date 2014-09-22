@@ -31,15 +31,15 @@ after trying out a bit with Jekyll (no Octopress) option.
 
 So far, so good.
 
-## TODO:
+A few to-do items were:
 
-1. Turn on Discus Comment
-1. Turn on Google analytics
-1. Won't do. ~~Maybe make letters smaller?~~
+1. Done. ~Turn on Discus Comment~
+1. Done. ~Turn on Google analytics~
 1. Done. ~~Migrating old blogger.~~
     1. To-do. Will follow [http://import.jekyllrb.com/docs/blogger/](http://import.jekyllrb.com/docs/blogger/)
     1. Actually, followed [this gist](https://gist.github.com/baldowl/1578928). 
     1. Still, need to choose what to keep (none?)
+1. Done. [Tag cloud + category list](https://github.com/tokkonopapa/octopress-tagcloud)
 
 ## Octopress workflow
 If using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), 
@@ -49,7 +49,7 @@ all the time. Add this to `.zsh`:
 
     alias rake='noglob rake'
 
-Then, the workflow looks like:
+Then, the [workflow](http://octopress.org/docs/deploying/github/) looks like:
 
 ``` bash
     rake new_post["Dive into Jekyll/Octopress + Github Pages"] 
@@ -64,7 +64,3 @@ Then, the workflow looks like:
     rake generate
     rake deploy
 ```
-## Links
-
-* [http://octopress.org/docs/deploying/github/](http://octopress.org/docs/deploying/github/)
-* Tag cloud + category list [https://github.com/tokkonopapa/octopress-tagcloud](https://github.com/tokkonopapa/octopress-tagcloud)

@@ -18,6 +18,7 @@ Data science tool chain
     1. [Google's R style guide](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
     1. [Hadley Wickham R style guide](http://r-pkgs.had.co.nz/style.html)
 1. Sublime text editor 
+    1. Read [This](https://developers.google.com/web/fundamentals/tools/setup/editor) and [that](http://robdodson.me/blog/2012/06/23/sublime-text-2-tips-and-shortcuts/)
 1. Python
     1. Easy route: [Anaconda distribution](http://continuum.io/downloads) with entire [SciPy](http://www.scipy.org/) stack
     1. Style guide. pylint.
@@ -30,7 +31,8 @@ Data science tool chain
     1. Best practices. 
     1. ROC. 
 7. Visualize best practice.
-    1. Ggplot. Plyr.
+    1. [ggplot2](ggplot2.org). [plyr](http://courses.had.co.nz/11-rice/)
+    1. [d3.js](http://d3js.org/). Not for the faint for heart.
 7. Feature reduction. 
     1. Principal component
     1. SVD
@@ -41,6 +43,11 @@ Data science tool chain
 1. [Reproduciblile and collaborative data science](https://www.google.com/search?q=Reproducible+and+Collaborative+Data+Science&oq=Reproducible+and+Collaborative+Data+Science&aqs=chrome..69i57j69i61.407j0j4&sourceid=chrome&es_sm=91&ie=UTF-8).
     1. [The Berkeley Science Review](http://berkeleysciencereview.com/reproducible-collaborative-data-science/), 
     1. ["STAT 157" topics](https://github.com/stat157/fall-2013/blob/master/topic-sketch.md). 
+1. "Some" web programming if you're geeky:
+    1. [Web Fundamentals](https://developers.google.com/web/fundamentals/), for multi device development
+    1. [AngularJS](https://angularjs.org/), a JavaScript MVW Framework
+    1. [Flask](http://flask.pocoo.org/), a microframework for Python
+    1. [Ionic](http://ionicframework.com/), a front-end framework for developing hybrid mobile apps with HTML5.
 
 
 
