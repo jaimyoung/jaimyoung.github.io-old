@@ -26,14 +26,25 @@ Here're components of data science toolchain, not in partiular order:
     1. [Boilerplate for larger projects](https://github.com/konstantint/python-boilerplate-template)
     1. Style guide and pylint. See [Google's Python style guide](https://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
     > Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. 
-<cite>Quoted by Damin Conway in [Perl Best Practices](http://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai)</cite>
+    <cite>[Damian Conway](http://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai)</cite>
 1. **Machine learning** / classification / regression
     1. "Elements of Statistical Learning"
-    1. Lasso
+    1. Lasso, glmnet
     1. Lasso w/ large data. 
     1. Random forest. 
+    1. gbm: Generalized Boosted Regression Models
     1. Best practices. 
-    1. ROC. 
+    1. [ROC](http://rocr.bioinf.mpi-sb.mpg.de/)
+1. **Research code**
+    1. Strive to be at least a decent programmer.
+    1. Learn from the real programmers.
+    1. Shorter code is 
+    1. Repeatability, automation is the key.
+    1. As codes get better, they tend to get shorter.
+    1. Best kinds of codes are those that gets incremental updates over time. This means that the code is useful and is being used.
+    1. Keep file length shorter than 200 if possible. Longer than that, it's difficult to follow the train of thoughts unless.
+    1. Do "visual" programming
+    1. Codes should have a narrative.
 7. **Data Visualization**
     1. [ggplot2](ggplot2.org). [plyr](http://courses.had.co.nz/11-rice/)
     1. [d3.js](http://d3js.org/), if feeling geeky.
