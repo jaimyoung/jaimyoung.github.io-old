@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2014/09/21/data-science-toolchain/</loc>
+    
+    <lastmod>2014-09-21T20:12:04-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2014/09/21/sublime-text-editor/</loc>
+    
+    <lastmod>2014-09-21T01:14:36-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2014/09/21/dive-into-jekyll-slash-octopress-plus-github-pages/</loc>
+    
+    <lastmod>2014-09-21T00:50:40-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2013/06/10/vertica-jdbc-in-eclipsemaven/</loc>
+    
+    <lastmod>2013-06-10T18:24:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2013/01/12/surviving-date-time-datatype/</loc>
+    
+    <lastmod>2013-01-12T16:16:00-08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2012/10/29/tech-books-that-influenced-me/</loc>
+    
+    <lastmod>2012-10-29T12:16:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2012/10/22/surviving-svn/</loc>
+    
+    <lastmod>2012-10-22T16:01:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2012/10/19/surviving-sqlplus/</loc>
+    
+    <lastmod>2012-10-19T03:20:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2012/10/16/principal-components-analysis-for/</loc>
+    
+    <lastmod>2012-10-16T12:57:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/2012/10/12/english-complex-korean/</loc>
+    
+    <lastmod>2012-10-12T16:32:00-07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/blog/archives/</loc>
+    <lastmod>2014-09-22T16:39:57-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/</loc>
+    <lastmod>2014-09-22T16:39:57-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://Jaimyoung.github.io/about/</loc>
+    <lastmod>2014-09-22T16:39:57-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+</urlset>

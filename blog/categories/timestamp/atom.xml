@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Timestamp | STATKWON]]></title>
+  <link href="http://Jaimyoung.github.io/blog/categories/timestamp/atom.xml" rel="self"/>
+  <link href="http://Jaimyoung.github.io/"/>
+  <updated>2014-09-22T16:39:57-07:00</updated>
+  <id>http://Jaimyoung.github.io/</id>
+  <author>
+    <name><![CDATA[Jaimyoung Kwon]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Surviving Date-time, POSIX, Unix Timestamp... In R, Oracle, MySQL, Perl]]></title>
+    <link href="http://Jaimyoung.github.io/blog/2013/01/12/surviving-date-time-datatype/"/>
+    <updated>2013-01-12T16:16:00-08:00</updated>
+    <id>http://Jaimyoung.github.io/blog/2013/01/12/surviving-date-time-datatype</id>
+    <content type="html"><![CDATA[<p>Timezone / timestamps are easy to mess up.
+It helps us in the long run
+to have a solid conceptual framework
+by reading about, among others:
+<a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">Timezone / UTC / GMT</a>,
+<a href="http://en.wikipedia.org/wiki/Unix_time">Unix epoch / timestamp</a>,
+<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>,
+and of course an <a href="http://xkcd.com/1179/">XKCD take on this</a>.</p>
+
+<p>Essentially, most tasks are juggling between a few different entities:</p>
+
+<ol>
+<li><strong>Unix timestamp</strong>: Good.</li>
+<li><strong>String with time zone</strong>: Good. e.g. &ldquo;2013-06-24T10:21:11Z&rdquo;</li>
+<li><strong>String without time zone</strong>: Bad, bad, bad
+
+<ul>
+<li><strong>String with assumed UTC time zone</strong></li>
+<li><strong>String with assumed non-UTC time zone</strong></li>
+</ul>
+</li>
+</ol>
+
+
+<h2>Parsing and formating</h2>
+
+<h3>R</h3>
+
+<p>Remember strptime is STRing to Posix Time class:</p>
+
+<pre><code class="r">    # when the string is in "standard" format:
+    strftime(as.POSIXlt('2009-12-25 01:23:45'),format='%Y-%m-%d %H:%M:%S')
+    # when the string is in non-standard format:
+    strftime(as.POSIXlt('2009-12-25 01:23:45'),format='%Y-%m-%d %H:%M:%S')
+
+    # TBD for unix timestamp
+
+    # Date to R date
+    as.POSIXlt('2012-01-02T18:27:44.0000000',
+    + format='%Y-%m-%dT%H:%M:%S.0000000', tz = 'GMT')
+
+    # R date to unix timestamp. This is simple.
+    as.numeric( R date)
+    e.g. as.numeric(as.POSIXlt('2012-01-02T18:27:44.0000000',
+    + format='%Y-%m-%dT%H:%M:%S.0000000', tz = 'GMT'))
+</code></pre>
+
+<h3>SQL</h3>
+
+<pre><code class="sql">    -- Oracle variant
+    select to_char( to_date('yyyy-mm-dd hh24:mi:ss', '2009-12-25 01:23:45'), 'mm/dd/yyyy hh24:mi:ss')
+    from dual;
+
+    -- MySQL variant
+    SELECT DATE_FORMAT(xxx,'%Y-%m');
+
+
+    -- PostgreSQL variant
+    -- TBD
+</code></pre>
+
+<h3>Perl</h3>
+
+<pre><code class="perl">    use POSIX;
+    my $date = POSIX::strftime('%Y-%m-%d', # '%Y-%m-%d %H:00:00',
+              gmtime($timestamp));
+</code></pre>
+
+<h3>Java</h3>
+
+<p>Save yourself trouble. Use <a href="http://www.joda.org/joda-time/">Joda Time</a></p>
+
+<h2>Iterate over days and months</h2>
+
+<p>Another imortant</p>
+
+<pre><code class="bash">    # TBA
+</code></pre>
+
+<pre><code class="python">    # TBA
+</code></pre>
+
+<pre><code class="r">    # TBA
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
